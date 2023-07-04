@@ -1,2 +1,3 @@
 # 100-Days-of-Code
-Python coding. Consistency.
+
+Python coding. Consistency. Persistence. Try harder.
