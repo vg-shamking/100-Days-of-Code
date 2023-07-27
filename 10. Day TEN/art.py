@@ -1,0 +1,3 @@
+logo = """
+HERE is LOGO
+"""
