@@ -11,7 +11,6 @@ def format_data(account):
 
 
 print(logo)
-print(vs)
 
 account_a = random.choice(data)
 account_b = random.choice(data)
@@ -19,4 +18,6 @@ if account_b == account_a:
     account_b = random.choice(data)
 
 print(f"Compare A: {format_data(account_a)}.")
-print(f"Compare A: {format_data(account_b)}.")
+print(vs)
+print(f"Compare B: {format_data(account_b)}.")
+guess = input("Who has more followers? Type 'A' or 'B': ").lower()
