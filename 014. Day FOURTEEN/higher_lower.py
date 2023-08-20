@@ -10,5 +10,7 @@ account_b = random.choice(data)
 if account_b == account_a:
     account_b = random.choice(data)
 
-print(account_a)
-print(account_b)
+account_name = account_a["name"]
+account_descr = account_a["description"]
+account_country = account_a["country"]
+print(f'{account_name}, a {account_descr}, from {account_country}')
