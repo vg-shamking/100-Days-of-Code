@@ -6,13 +6,6 @@ screen.setup(width=800, height=600)
 screen.title("Pong")
 screen.tracer(0)
 
-paddle = Turtle()
-paddle.shape("square")
-paddle.color("white")
-paddle.shapesize(stretch_wid=5, stretch_len=1)
-paddle.penup()
-paddle.goto(350, 0)
-
 r_paddle = Paddle(350, 0)
 l_paddle = Paddle(-350, 0)
 
