@@ -26,4 +26,8 @@ while gami_is_on:
     screen.update()
     ball.move()
 
+    # Detect Collision
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        ball.bounce()
+
 screen.exitonclick()
