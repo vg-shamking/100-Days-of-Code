@@ -9,8 +9,8 @@ screen.setup(width=800, height=600)
 screen.title("Pong")
 screen.tracer(0)
 
-r_paddle = Paddle((350, 0))
-l_paddle = Paddle((-350, 0))
+r_paddle = Paddle((360, 0))
+l_paddle = Paddle((-360, 0))
 # top_paddle = Paddle((100,100))
 ball = Ball()
 
@@ -28,7 +28,10 @@ while gami_is_on:
 
     # Detect Collision
     if ball.ycor() > 280 or ball.ycor() < -280:
-        ball.bounce()
+        ball.bounce_y()
 
+    # Detect collision with r_paddle
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 340 or ball.distance(l_paddle) < 50 and ball.xcor() < -340:
+        ball.bounce_x()
 
 screen.exitonclick()
