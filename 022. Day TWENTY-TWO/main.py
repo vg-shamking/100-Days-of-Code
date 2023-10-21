@@ -34,4 +34,11 @@ while gami_is_on:
     if ball.distance(r_paddle) < 50 and ball.xcor() > 340 or ball.distance(l_paddle) < 50 and ball.xcor() < -340:
         ball.bounce_x()
 
+    # Detect when R paddle misses
+    if ball.xcor() > 380:
+        ball.reset_position()
+
+    if ball.xcor() < -380:
+        ball.reset_position()
+
 screen.exitonclick()
