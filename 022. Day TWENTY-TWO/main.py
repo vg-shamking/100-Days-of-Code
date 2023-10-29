@@ -46,3 +46,4 @@ while gami_is_on:
         scoreboard.r_point()
 
 screen.exitonclick()
+
